@@ -7,9 +7,8 @@ import scala.util.Random
 object Main extends App  {
   val interface: GUI = new GUI
   var random: Random = new Random()
-  var randomR: Random = new Random()
-  var randomG: Random = new Random()
-  var randomB: Random = new Random()
+  var randomRow: Int = 0
+  var randomColumn: Int = 0
   var c: Int = 700
   var r: Int = 700
   var time: Int = 0
@@ -22,18 +21,7 @@ object Main extends App  {
   interface.textTitle(w)
   interface.textPressStart(w, 150, 420)
   
-  // val board: Array[Array[Int]] = Array.empty
-  // var r: Int = 700
-  // var c: Int = 700
-  //
-  // for(i <- 0 to c) {
-  //   for(j <- 0 to r) {
-  //     w.setColor(Color.lightGray)
-  //     w.drawFilledCircle((i*100)+5, (j*100)+105, 90)
-  //   }
-  // }
-  
-  // Keyboard control
+    // Keyboard control
   w.setKeyManager(new KeyAdapter() {
       override def keyPressed(e: KeyEvent): Unit = {
         ok = true
@@ -43,21 +31,35 @@ object Main extends App  {
           allowDiffSelection = true
           interface.selectDiff(w)
         }
+
+        // Easy mode
         else if (e.getKeyChar == '1' && allowDiffSelection) {
-          interface.easyMode(w)
-          val easyBoard: Array[Array[Color]] = Array.ofDim[Color](7, 6)
-
-
-
-
-        
-
+          val easyBoard: Array[Array[Color]] = Array.ofDim[Color](6, 7)
+          val colorBoard: Array[Color] = new Array[Color](21)
           
+          // Stores different colors in the colorBoard
+          for(i <- colorBoard.indices) {
+            var randomColor: Color = Color(random.nextInt(255), random.nextInt(255), random.nextInt(255))
+            colorBoard(i) = randomColor
+          }
 
-          
-          println(easyBoard.mkString(","))
+          // Stores the colors in the main game board
+          for(i <- colorBoard.indices) {
+            for(j <- 0 to 2) {
+              randomRow = random.nextInt(6)
+              randomColumn = random.nextInt(7)
+              if(easyBoard(randomRow)(randomColumn) != null){
+                easyBoard(randomRow)(randomColumn) = colorBoard(i)
+              }
+            }
+          }
+          interface.easyMode(w, easyBoard)
         }
+        
+        // Medium mode
         else if (e.getKeyChar == '2' && allowDiffSelection) println("You chose 2")
+
+        // Hard mode
         else if (e.getKeyChar == '3' && allowDiffSelection) println("You chose 3")
       }
   })

@@ -21,6 +21,17 @@ class GUI {
 
   def textPressStart(w: FunGraphics, posx: Int, posy: Int): Unit = {
     w.drawFancyString(posx + 3, posy - 5, "Press > s < to start", Color.gray, 40)
+// val board: Array[Array[Int]] = Array.empty
+  // var r: Int = 700
+  // var c: Int = 700
+  //
+  // for(i <- 0 to c) {
+  //   for(j <- 0 to r) {
+  //     w.setColor(Color.lightGray)
+  //     w.drawFilledCircle((i*100)+5, (j*100)+105, 90)
+  //   }
+  // }
+  
     w.drawFancyString(posx, posy, "Press > s < to start", Color.black, 40)
   }
 
@@ -37,14 +48,18 @@ class GUI {
     w.drawFancyString(70, 550, "3 - Hard", Color.black, 40)
   }
 
-  def easyMode(w: FunGraphics): Unit = {
-    // Reset the Background
+  def easyMode(w: FunGraphics, easyBoard: Array[Array[Color]]): Unit = {
+    // Clean Background
     w.drawFillRect(0, 0, 700, 700)
-
+    println(easyBoard(1)(1))
     for(i <- 0 to 700) {
       for(j <- 0 to 700) {
-        w.setColor(Color.white)
-        w.drawFillRect((i*100)+5, (j*100)+105, 90, 90)
+        // for(a <- easyBoard.indices){
+          // for(b <- easyBoard(a).indices){
+            w.setColor(easyBoard(3)(3))
+            w.drawFillRect((i*100)+5, (j*100)+105, 90, 90)
+          // }
+        // }
       }
     }
   }
