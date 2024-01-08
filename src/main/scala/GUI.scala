@@ -37,6 +37,18 @@ class GUI {
     w.drawFancyString(70, 550, "3 - Hard", Color.black, 40)
   }
 
+  def easyMode(w: FunGraphics): Unit = {
+    // Reset the Background
+    w.drawFillRect(0, 0, 700, 700)
+
+    for(i <- 0 to 700) {
+      for(j <- 0 to 700) {
+        w.setColor(Color.white)
+        w.drawFillRect((i*100)+5, (j*100)+105, 90, 90)
+      }
+    }
+  }
+
 
 
   
