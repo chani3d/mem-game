@@ -37,7 +37,7 @@ class GUI {
 
   def selectDiff(w: FunGraphics): Unit = {
     // Background of the menu
-    w.drawFillRect(0, 0, 700, 700)
+    w.drawFillRect(0, 0, 710, 710)
 
     // Select difficulty text
     w.drawFancyString(110, 200, "Select difficulty", Color.gray, 60)
@@ -49,18 +49,18 @@ class GUI {
   }
 
   def easyMode(w: FunGraphics, easyBoard: Array[Array[Color]]): Unit = {
+    var r: Int = 10
+    var c: Int = 10
     // Clean Background
     w.drawFillRect(0, 0, 700, 700)
-    println(easyBoard(1)(1))
-    for(i <- 0 to 700) {
-      for(j <- 0 to 700) {
-        // for(a <- easyBoard.indices){
-          // for(b <- easyBoard(a).indices){
-            w.setColor(easyBoard(3)(3))
-            w.drawFillRect((i*100)+5, (j*100)+105, 90, 90)
-          // }
-        // }
-      }
+    for(a <- easyBoard.indices; b <- easyBoard(a).indices){
+      w.setColor(easyBoard(a)(b))
+      w.drawFillRect(c, r, 90, 90)
+      if(c < 600) c += 100
+      else if (c == 610) {
+        r += 100
+        c = 10
+      }     
     }
   }
 

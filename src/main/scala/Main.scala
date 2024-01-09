@@ -12,7 +12,7 @@ object Main extends App  {
   var c: Int = 700
   var r: Int = 700
   var time: Int = 0
-  val w: FunGraphics = new FunGraphics(700, 700, "Memory, 2024 by UK & SJCG - ISC")
+  val w: FunGraphics = new FunGraphics(710, 710, "Memory, 2024 by UK & SJCG - ISC")
   var started: Boolean = false
   var gameOver: Boolean = false
   var ok: Boolean = false // Created to avoid problems with the keyboard setter
@@ -44,13 +44,34 @@ object Main extends App  {
           }
 
           // Stores the colors in the main game board
-          for(i <- colorBoard.indices) {
-            for(j <- 0 to 2) {
-              randomRow = random.nextInt(6)
-              randomColumn = random.nextInt(7)
-              if(easyBoard(randomRow)(randomColumn) != null){
-                easyBoard(randomRow)(randomColumn) = colorBoard(i)
-              }
+          for(i <- colorBoard.indices; j <- 0 to 2) {
+            randomRow = random.nextInt(6)
+            randomColumn = random.nextInt(7)
+            if(easyBoard(randomRow)(randomColumn) == null){
+              easyBoard(randomRow)(randomColumn) = colorBoard(i)
+            }
+          }
+           
+
+
+
+
+          // for(i <- easyBoard.indices){
+          //   for(j <- easyBoard(i).indices){
+          //     for(i <- colorBoard.indices)
+          //     if(easyBoard(i)(j) == null){
+          //       easyBoard(i)(j) = colorBoard(counter)
+          //       counter += 1
+          //     }
+          //   }
+          // }
+
+          var lines: Int = 0 
+
+          for(i <- easyBoard.indices) {
+            for(j <- easyBoard(i).indices){
+              println(s"${lines}. ${easyBoard(i)(j)}")
+              lines += 1
             }
           }
           interface.easyMode(w, easyBoard)
