@@ -1,0 +1,7 @@
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E037] Declaration Error: /Users/mackerel/Desktop/mem-game/src/main/scala/Main.scala:75:25 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m75 |[0m            [33moverride[0m [33mdef[0m mouseClicker(e: MouseEvent): Unit = {[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                         ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                         [33mmethod[0m [35mmouseClicker[0m overrides nothing[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m

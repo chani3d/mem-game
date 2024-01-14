@@ -1,0 +1,12 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(run, Some(d8c3643a-86da-46d8-af07-98e5ea7936ae), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / run[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/mackerel/Desktop/mem-game/target/scala-3.3.1/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- Error: /Users/mackerel/Desktop/mem-game/src/main/scala/Main.scala:48:31 -----[0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m48 |[0m          [33mval[0m [36measyBoard[0m: [35mArray[0m[[35mArray[0m][[35mColor[0m] = Array.ofDim[[35mColor[0m]([31m7[0m, [31m6[0m)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                               ^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m           Type argument Array does not have the same kind as its bound [0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 1 s, completed 8 Jan 2024, 13:30:48[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m

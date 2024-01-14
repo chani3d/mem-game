@@ -1,0 +1,14 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(run, Some(55a80da2-20b7-43ff-9d76-4e7eea099bbe), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / run[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/mackerel/Desktop/mem-game/target/scala-3.3.1/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E037] Declaration Error: /Users/mackerel/Desktop/mem-game/src/main/scala/Main.scala:75:25 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m75 |[0m            [33moverride[0m [33mdef[0m mouseClicker(e: MouseEvent): Unit = {[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                         ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                         [33mmethod[0m [35mmouseClicker[0m overrides nothing[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 0 s, completed 14 Jan 2024, 05:31:16[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m

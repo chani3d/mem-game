@@ -1,0 +1,26 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(run, Some(4166db2a-c90b-44e5-9270-36605546ab91), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / run[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 2 Scala sources to /Users/mackerel/Desktop/mem-game/target/scala-3.3.1/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E050] Type Error: /Users/mackerel/Desktop/mem-game/src/main/scala/Main.scala:52:43 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m52 |[0m            [33mvar[0m [36mrandomColor[0m: [35mColor[0m = Color(randomR([31m255[0m), randomG([31m255[0m), randomB([31m255[0m))[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                                           ^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                [33mvariable[0m [35mrandomR[0m in [33mobject[0m [35mMain[0m does not take parameters[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E050] Type Error: /Users/mackerel/Desktop/mem-game/src/main/scala/Main.scala:52:57 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m52 |[0m            [33mvar[0m [36mrandomColor[0m: [35mColor[0m = Color(randomR([31m255[0m), randomG([31m255[0m), randomB([31m255[0m))[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                                                         ^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                [33mvariable[0m [35mrandomG[0m in [33mobject[0m [35mMain[0m does not take parameters[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E050] Type Error: /Users/mackerel/Desktop/mem-game/src/main/scala/Main.scala:52:71 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m52 |[0m            [33mvar[0m [36mrandomColor[0m: [35mColor[0m = Color(randomR([31m255[0m), randomG([31m255[0m), randomB([31m255[0m))[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                                                                       ^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                [33mvariable[0m [35mrandomB[0m in [33mobject[0m [35mMain[0m does not take parameters[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0mthree errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 1 s, completed 8 Jan 2024, 14:12:54[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
