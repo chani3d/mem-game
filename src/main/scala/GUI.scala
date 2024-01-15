@@ -53,7 +53,6 @@ class GUI {
     var c: Int = 10
     val revealedBoard: Array[Array[Color]] = new Array[Array[Color]](shuffledEasyBoard.length - 1)
 
-
     // Clean Background
     w.drawFillRect(0, 0, 700, 700)
 
@@ -68,7 +67,6 @@ class GUI {
       }     
     }
 
-
     // Draw the board in the game
     // for(a <- shuffledEasyBoard.indices; b <- shuffledEasyBoard(a).indices){
     //   w.setColor(shuffledEasyBoard(a)(b))
@@ -79,6 +77,11 @@ class GUI {
     //     c = 10
     //   }     
     // }
+  }
+
+  def drawRect(shuffledEasyBoard: Array[Array[Color]], w: FunGraphics, x: Int, y: Int, c: Int, r: Int): Unit = {
+    w.setColor(shuffledEasyBoard(y)(x))
+    w.drawFillRect(c, r, 90, 90)
   }
 
 

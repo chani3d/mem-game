@@ -70,12 +70,175 @@ object Main extends App  {
           }
           interface.easyMode(w, shuffledEasyBoard) // Initialize the easy mode
 
-          // Ading a mouse listener
+          // Adding a mouse listener
           w.addMouseListener(new MouseAdapter() {
             override def mouseClicked(e: MouseEvent): Unit = {
               val event = e
               val posx = event.getX
               val posy = event.getY
+
+              // Checking posx and posy
+              var r: Int = 10
+              var c: Int = 10
+              var choices: Int = 2
+
+              // First row
+              if(posy < 100 && choices == 2) {
+                if(posx < 100) {
+                  interface.drawRect(shuffledEasyBoard, w, 0, 0, c, r)
+                  choices -= 2
+                }
+                else if(posx < 200) {
+                  interface.drawRect(shuffledEasyBoard, w, 1, 0, c + 100, r)
+                  choices -= 2
+                }
+                else if(posx < 300){
+                  interface.drawRect(shuffledEasyBoard, w, 2, 0, c + 200, r)
+                }
+                else if(posx < 400) {
+                  interface.drawRect(shuffledEasyBoard, w, 3, 0, c + 300, r)
+                }
+                else if(posx < 500) {
+                  interface.drawRect(shuffledEasyBoard, w, 4, 0, c + 400, r)
+                }
+                else if(posx < 600) {
+                  interface.drawRect(shuffledEasyBoard, w, 5, 0, c + 500, r)
+                }
+                else if(posx < 700) {
+                  interface.drawRect(shuffledEasyBoard, w, 6, 0, c + 600, r)
+                }
+              }
+               // Second row
+               if(posy > 100 && posy < 200) {
+                if(posx < 100) {
+                  interface.drawRect(shuffledEasyBoard, w, 0, 1, c, r + 100)
+                }
+                else if(posx < 200) {
+                  interface.drawRect(shuffledEasyBoard, w, 1, 1, c + 100, r + 100)
+                }
+                else if(posx < 300){
+                  interface.drawRect(shuffledEasyBoard, w, 2, 1, c + 200, r + 100)
+                }
+                else if(posx < 400) {
+                  interface.drawRect(shuffledEasyBoard, w, 3, 1, c + 300, r + 100)
+                }
+                else if(posx < 500) {
+                  interface.drawRect(shuffledEasyBoard, w, 4, 1, c + 400, r + 100)
+                }
+                else if(posx < 600) {
+                  interface.drawRect(shuffledEasyBoard, w, 5, 1, c + 500, r + 100)
+                }
+                else if(posx < 700) {
+                  interface.drawRect(shuffledEasyBoard, w, 6, 1, c + 600, r + 100)
+                }
+              }
+
+               // Third row
+               if(posy > 200 && posy < 300) {
+                if(posx < 100) {
+                  interface.drawRect(shuffledEasyBoard, w, 0, 2, c, r + 200)
+                }
+                else if(posx < 200) {
+                  interface.drawRect(shuffledEasyBoard, w, 1, 2, c + 100, r + 200)
+                }
+                else if(posx < 300){
+                  interface.drawRect(shuffledEasyBoard, w, 2, 2, c + 200, r + 200)
+                }
+                else if(posx < 400) {
+                  interface.drawRect(shuffledEasyBoard, w, 3, 2, c + 300, r + 200)
+                }
+                else if(posx < 500) {
+                  interface.drawRect(shuffledEasyBoard, w, 4, 2, c + 400, r + 200)
+                }
+                else if(posx < 600) {
+                  interface.drawRect(shuffledEasyBoard, w, 5, 2, c + 500, r + 200)
+                }
+                else if(posx < 700) {
+                  interface.drawRect(shuffledEasyBoard, w, 6, 2, c + 600, r + 200)
+                }
+              }
+
+               // Fourth row
+               if(posy > 300 && posy < 400) {
+                if(posx < 100) {
+                  interface.drawRect(shuffledEasyBoard, w, 0, 3, c, r + 300)
+                }
+                else if(posx < 200) {
+                  interface.drawRect(shuffledEasyBoard, w, 1, 3, c + 100, r + 300)
+                }
+                else if(posx < 300){
+                  interface.drawRect(shuffledEasyBoard, w, 2, 3, c + 200, r + 300)
+                }
+                else if(posx < 400) {
+                  interface.drawRect(shuffledEasyBoard, w, 3, 3, c + 300, r + 300)
+                }
+                else if(posx < 500) {
+                  interface.drawRect(shuffledEasyBoard, w, 4, 3, c + 400, r + 300)
+                }
+                else if(posx < 600) {
+                  interface.drawRect(shuffledEasyBoard, w, 5, 3, c + 500, r + 300)
+                }
+                else if(posx < 700) {
+                  interface.drawRect(shuffledEasyBoard, w, 6, 3, c + 600, r + 300)
+                }
+              }
+               // Fifth row
+               if(posy > 400 && posy < 500) {
+                if(posx < 100) {
+                  interface.drawRect(shuffledEasyBoard, w, 0, 4, c, r + 400)
+                }
+                else if(posx < 200) {
+                  interface.drawRect(shuffledEasyBoard, w, 1, 4, c + 100, r + 400)
+                }
+                else if(posx < 300){
+                  interface.drawRect(shuffledEasyBoard, w, 2, 4, c + 200, r + 400)
+                }
+                else if(posx < 400) {
+                  interface.drawRect(shuffledEasyBoard, w, 3, 4, c + 300, r + 400)
+                }
+                else if(posx < 500) {
+                  interface.drawRect(shuffledEasyBoard, w, 4, 4, c + 400, r + 400)
+                }
+                else if(posx < 600) {
+                  interface.drawRect(shuffledEasyBoard, w, 5, 4, c + 500, r + 400)
+                }
+                else if(posx < 700) {
+                  interface.drawRect(shuffledEasyBoard, w, 6, 4, c + 600, r + 400)
+                }
+              }
+               // Sixth row
+               if(posy > 500 && posy < 600) {
+                if(posx < 100) {
+                  interface.drawRect(shuffledEasyBoard, w, 0, 5, c, r + 500)
+                }
+                else if(posx < 200) {
+                  interface.drawRect(shuffledEasyBoard, w, 1, 5, c + 100, r + 500)
+                }
+                else if(posx < 300){
+                  interface.drawRect(shuffledEasyBoard, w, 2, 5, c + 200, r + 500)
+                }
+                else if(posx < 400) {
+                  interface.drawRect(shuffledEasyBoard, w, 3, 5, c + 300, r + 500)
+                }
+                else if(posx < 500) {
+                  interface.drawRect(shuffledEasyBoard, w, 4, 5, c + 400, r + 500)
+                }
+                else if(posx < 600) {
+                  interface.drawRect(shuffledEasyBoard, w, 5, 5, c + 500, r + 500)
+                }
+                else if(posx < 700) {
+                  interface.drawRect(shuffledEasyBoard, w, 6, 5, c + 600, r + 500)
+                }
+              }
+              
+              if(choices == 0) {
+                println("Choices = 0")
+                // if()
+                choices = 2
+              }
+
+
+
 
               println(s"Mouse position $posx - $posy")
             }
@@ -84,6 +247,7 @@ object Main extends App  {
 
         /* What to do : Create if statements to check the position captured by the
          * mouse event */
+
         }
         
         // Medium mode

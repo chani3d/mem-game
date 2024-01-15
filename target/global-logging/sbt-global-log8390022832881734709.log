@@ -1,0 +1,23 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(run, Some(77fe22f2-7000-4223-89a9-f9583392c089), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / run[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 3 Scala sources to /Users/mackerel/Desktop/mem-game/target/scala-3.3.1/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E018] Syntax Error: /Users/mackerel/Desktop/mem-game/src/main/scala/Main.scala:237:24 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m237 |[0m                choices = [31m2[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m                        ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m                        expression expected but [31m=[0m found[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E008] Not Found Error: /Users/mackerel/Desktop/mem-game/src/main/scala/Main.scala:237:16 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m235 |[0m                println([31m"Choices = 0"[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m236 |[0m                [34m// if()[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m237 |[0m                choices = [31m2[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m    |[0m                        ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m       value choices is not a member of String.[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m       Note that `choices` is treated as an infix operator in Scala 3.[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m       If you do not want that, insert a `;` or empty line in front[0m
+[0m[[0m[31merror[0m] [0m[0m[31m    |[0m       or drop any spaces behind the operator.[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 0 s, completed 15 Jan 2024, 00:15:49[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m

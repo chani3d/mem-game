@@ -1,0 +1,17 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(run, Some(3fd202f8-39d0-439c-b6d4-a3954f5da88c), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / run[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/mackerel/Desktop/mem-game/target/scala-3.3.1/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E040] Syntax Error: /Users/mackerel/Desktop/mem-game/src/main/scala/GUI.scala:95:0 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m95 |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m'}' expected, but eof found[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- Warning: /Users/mackerel/Desktop/mem-game/src/main/scala/GUI.scala:84:2 -----[0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m84 |[0m  [33mdef[0m [36mdrawRect[0m([36mshuffledEasyBoard[0m: [35mArray[0m[[35mArray[0m[[35mColor[0m]], [36mw[0m: [35mFunGraphics[0m, [36mx[0m: [35mInt[0m, [36my[0m: [35mInt[0m, [36mc[0m: [35mInt[0m, [36mr[0m: [35mInt[0m): [35mUnit[0m = {[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m   |[0m  ^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m  Line is indented too far to the left, or a `}` is missing[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 1 s, completed 14 Jan 2024, 20:38:08[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m

@@ -1,0 +1,20 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(run, Some(02595853-f958-4812-a665-318cd9dfc1bf), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / run[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/mackerel/Desktop/mem-game/target/scala-3.3.1/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E018] Syntax Error: /Users/mackerel/Desktop/mem-game/src/main/scala/GUI.scala:72:30 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m72 |[0m    Draw the board in the game[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                              ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                              expression expected but [31mfor[0m found[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E006] Not Found Error: /Users/mackerel/Desktop/mem-game/src/main/scala/GUI.scala:72:4 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m72 |[0m    Draw the board in the game[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m    ^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m    Not found: Draw[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 2 s, completed 14 Jan 2024, 20:36:29[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
